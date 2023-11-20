@@ -1,8 +1,8 @@
 export const ContactForm = () => {
-  return (
-    <div>
-      <label>Name</label>
-      <input type="text" required />
-    </div>
-  );
+  // return (
+  //   <div>
+  //     <label>Name</label>
+  //     <input type="text" required />
+  //   </div>
+  // );
 };

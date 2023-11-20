@@ -1,7 +1,13 @@
-export const ContactList = () => {
+import { Contacts } from './Contacts';
+
+export const ContactList = ({ items, onDelete }) => {
   return (
     <ul>
-      <li></li>
+      {items.map(item => (
+        <li key={item.id}>
+          <Contacts el={item} Delete={onDelete} />
+        </li>
+      ))}
     </ul>
   );
 };
