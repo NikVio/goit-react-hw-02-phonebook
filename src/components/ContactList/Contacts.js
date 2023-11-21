@@ -1,12 +1,14 @@
+import { NameContact, DeleteBtn, WrapperContact } from './Contacts.styled';
+
 export const Contacts = ({ el: { name, id, number }, Delete }) => {
   return (
-    <div>
-      <p>
+    <WrapperContact>
+      <NameContact>
         {name}: <span>{number}</span>
-      </p>
-      <button onClick={() => Delete(id)} type="button">
+      </NameContact>
+      <DeleteBtn onClick={() => Delete(id)} type="button">
         Delete
-      </button>
-    </div>
+      </DeleteBtn>
+    </WrapperContact>
   );
 };
